@@ -3,6 +3,7 @@ def get_first_name_of_season_winner(data, season)
   data.each do |seasons, data_values|
     data_values.each do |x|
       if x["status"] == ("Winner")
+        binding.pry
         return x["name"].split[0]
       end
     end
